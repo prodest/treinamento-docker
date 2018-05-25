@@ -2,11 +2,5 @@ version: '3'
 services:
   webapp:
     ports:
-      - 3005:3000
-    volumes:
-      - ./:/app
-    build:
-      context: ./
-      dockerfile: Dockerfile
-      args:
-        buildno: 1
+      - 3005:8080
+    image: workshop-docker
